@@ -11,7 +11,6 @@ const defaultProps = { success: false };
  * @param {object} testValues - Context values specific to this setup.
  * @returns {ShallowWrapper}
  */
-
 const setup = (props = {}) => {
   const setupProps = { ...defaultProps, ...props };
   return shallow(<Congrats {...setupProps} />);

@@ -13,7 +13,6 @@ const defaultProps = {
  * @param {array} guessedWords - guessedWords value specific to this setup.
  * @returns {ShallowWrapper}
  */
-
 const setup = (props = {}) => {
   const setupProps = { ...defaultProps, ...props };
   return shallow(<GuessedWords {...setupProps} />);
