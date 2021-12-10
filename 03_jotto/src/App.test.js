@@ -10,7 +10,7 @@ const setup = () => {
   return shallow(<App />);
 };
 
-test('renders withoyt errors', () => {
+test('renders without errors', () => {
   const wrapper = setup();
   const appComponent = findByTestAttr(wrapper, 'component-app');
   expect(appComponent).toHaveLength(1);
